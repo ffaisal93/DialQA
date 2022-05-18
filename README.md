@@ -91,7 +91,7 @@ python src/run_squad.py \
 | Total            | 72.60 | 59.71       | 5766          |
 
 ## Citation
-If you use SD-QA, please cite the "[SD-QA: Spoken Dialectal Question Answering for the Real World](https://arxiv.org/abs/2109.12072)". You can use the following BibTeX entry
+Audio files and augmented dataset are from SD-QA which was built on top of TyDiQA.
 ~~~
 @inproceedings{faisal-etal-21-sdqa,
  title = {{SD-QA}: {S}poken {D}ialectal {Q}uestion {A}nswering for the {R}eal {W}orld},
@@ -104,7 +104,6 @@ If you use SD-QA, please cite the "[SD-QA: Spoken Dialectal Question Answering f
 }
 ~~~
 
-We built our augmented dataset and baselines on top of TydiQA. Kindly also make sure to cite the original TyDi QA paper,
 ~~~
 @article{tydiqa,
 title   = {TyDi QA: A Benchmark for Information-Seeking Question Answering in Typologically Diverse Languages},
