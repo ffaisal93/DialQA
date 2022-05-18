@@ -1,6 +1,6 @@
 # DialQa
 
-Requirements ([`requirements.txt`]) and installation: 
+Requirements (`requirements.txt`) and installation: 
 ```
 ./install.sh
 ```
@@ -17,10 +17,10 @@ data/
 				dialect-region/
 					{lang}-{id}-{dialect-region}.wav
 ```
-- [`dialqa-dev-og.json`]: Original Development dataset gold questions.
-- [`dialqa-dev-aug.json`]: Development dataset with dialectal questions (speech recognition i.e. ASR outputs). This is our **task development dataset**.
-- [`lang`]: eng, ara, swa
-- [`audio`]: folder containing question audio files. The audio file names [`{lang}-{id}-{dialect-region}`] have one-to-one mappings with the example ids from the json files.
+- `dialqa-dev-og.json`: Original Development dataset gold questions.
+- `dialqa-dev-aug.json`: Development dataset with dialectal questions (speech recognition i.e. ASR outputs). This is our **task development dataset**.
+- `lang`: eng, ara, swa
+- `audio`: folder containing question audio files. The audio file names `{lang}-{id}-{dialect-region}` have one-to-one mappings with the example ids from the json files.
 
 ## Baseline (ASR QA)
 
