@@ -85,7 +85,7 @@ python src/run_squad.py \
 | Arabic-Egypt (egy)       | 72.39 | 56.79       | 324           |
 | Arabic-Jordan (jor)       | 73.27 | 57.41       | 324           |
 | Arabic-Tunisia (tun)       | 73.55 | 57.71       | 324           |
-| **Arabic-Dialect(avg)**  | **72.73** | **57.02**       | **1296**          |
+| **Arabic-Dialect (avg)**  | **72.73** | **57.02**       | **1296**          |
 |                  |       |             |               |
 | Kiswahili-Kenya (ken)    | 72.12 | 63.1        | 1000          |
 | Kiswahili-Tanzania (tza) | 70.74 | 61.7        | 1000          |
