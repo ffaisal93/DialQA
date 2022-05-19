@@ -13,8 +13,8 @@ data/
 	dialqa-dev-aug.json
 	audio/
 		dev/
-			lang/
-				dialect-region/
+			{lang}/
+				{dialect-region}/
 					{lang}-{id}-{dialect-region}.wav
 ```
 - `dialqa-dev-og.json`: Original Development dataset gold questions.
