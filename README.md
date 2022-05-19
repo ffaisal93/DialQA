@@ -93,23 +93,41 @@ python src/run_squad.py \
 ## Citation
 Audio files and augmented dataset are from SD-QA which was built on top of TyDiQA.
 ~~~
-@inproceedings{faisal-etal-21-sdqa,
- title = {{SD-QA}: {S}poken {D}ialectal {Q}uestion {A}nswering for the {R}eal {W}orld},
-  author = {Faisal, Fahim and Keshava, Sharlina and ibn Alam, Md Mahfuz and Anastasopoulos, Antonios},
-  url={https://arxiv.org/abs/2109.12072},
-  year = {2021},
-  booktitle = {Findings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP Findings)},
-  publisher = {Association for Computational Linguistics},
-  month = {November},
+@inproceedings{faisal-etal-2021-sd-qa,
+    title = "{SD}-{QA}: Spoken Dialectal Question Answering for the Real World",
+    author = "Faisal, Fahim  and
+      Keshava, Sharlina  and
+      Alam, Md Mahfuz Ibn  and
+      Anastasopoulos, Antonios",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.281",
+    doi = "10.18653/v1/2021.findings-emnlp.281",
+    pages = "3296--3315",
 }
 ~~~
 
 ~~~
-@article{tydiqa,
-title   = {TyDi QA: A Benchmark for Information-Seeking Question Answering in Typologically Diverse Languages},
-author  = {Jonathan H. Clark and Eunsol Choi and Michael Collins and Dan Garrette and Tom Kwiatkowski and Vitaly Nikolaev and Jennimaria Palomaki}
-journal = {TACL},
-year    = {2020}
+@article{clark-etal-2020-tydi,
+    title = "{T}y{D}i {QA}: A Benchmark for Information-Seeking Question Answering in Typologically Diverse Languages",
+    author = "Clark, Jonathan H.  and
+      Choi, Eunsol  and
+      Collins, Michael  and
+      Garrette, Dan  and
+      Kwiatkowski, Tom  and
+      Nikolaev, Vitaly  and
+      Palomaki, Jennimaria",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "8",
+    year = "2020",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/2020.tacl-1.30",
+    doi = "10.1162/tacl_a_00317",
+    pages = "454--470",
 }
 ~~~
 
