@@ -79,11 +79,14 @@ python src/run_squad.py \
 | english-ind_s    | 72.22 | 58.10       | 494           |
 | english-aus      | 73.67 | 59.52       | 494           |
 | english-phl      | 73.76 | 59.11       | 494           |
+| english-phl      | 73.76 | 59.11       | 494           |
+| **english(avg)** | 73.47 | 58.95       | 2470          |
 |                  |       |             |               |
 | arabic-dza       | 71.72 | 56.17       | 324           |
 | arabic-egy       | 72.39 | 56.79       | 324           |
 | arabic-jor       | 73.27 | 57.41       | 324           |
 | arabic-tun       | 73.55 | 57.71       | 324           |
+| **arabic(avg)**  | 72.73 | 57.02       | 1296          |
 |                  |       |             |               |
 | swahili-kenya    | 72.12 | 63.1        | 1000          |
 | swahili-tanzania | 70.74 | 61.7        | 1000          |
