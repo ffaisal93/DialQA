@@ -407,6 +407,8 @@ def calc_dialect_evaluation(examples,predictions):
 
     all_results={}
     for lang in lang_dialects:
+        lang_level=[]
+        lang_pred=collections.OrderedDict()
         for dial in lang_dialects[lang]:
             name = '{}--{}'.format(lang,dial)
             new_examples=[]
@@ -415,11 +417,14 @@ def calc_dialect_evaluation(examples,predictions):
                 if exam.qas_id.startswith(lang)==True and exam.qas_id.endswith(dial):
                     new_examples.append(exam)
                     new_preds[exam.qas_id]=predictions[exam.qas_id]
+                    lang_level.append(exam)
+                    lang_pred[exam.qas_id]=predictions[exam.qas_id]
             if len(new_examples)!=0:
                 results = squad_evaluate(new_examples, new_preds)
                 all_results[name]=results
                 # print(name)
                 # print(results)
+        all_results[lang+'-total']=squad_evaluate(lang_level, lang_pred)
         
 
     # Compute the F1 and exact scores.
