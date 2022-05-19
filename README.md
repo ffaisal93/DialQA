@@ -80,18 +80,19 @@ python src/run_squad.py \
 | english-aus      | 73.67 | 59.52       | 494           |
 | english-phl      | 73.76 | 59.11       | 494           |
 | english-phl      | 73.76 | 59.11       | 494           |
-| **english(avg)** | **73.47** | 58.95       | 2470          |
+| **english(avg)** | **73.47** | **58.95**       | **2470**          |
 |                  |       |             |               |
 | arabic-dza       | 71.72 | 56.17       | 324           |
 | arabic-egy       | 72.39 | 56.79       | 324           |
 | arabic-jor       | 73.27 | 57.41       | 324           |
 | arabic-tun       | 73.55 | 57.71       | 324           |
-| **arabic(avg)**  | 72.73 | 57.02       | 1296          |
+| **arabic(avg)**  | **72.73** | **57.02**       | **1296**          |
 |                  |       |             |               |
 | swahili-kenya    | 72.12 | 63.1        | 1000          |
 | swahili-tanzania | 70.74 | 61.7        | 1000          |
+| **swahili(avg)**  | **71.43** | **62.4**       | **2000**          |
 |                  |       |             |               |
-| Total            | 72.60 | 59.71       | 5766          |
+| **All Language**            | **72.60** | **59.71**       | **5766**          |
 
 ## Citation
 Audio files and augmented dataset are from SD-QA which was built on top of TyDiQA.
