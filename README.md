@@ -114,4 +114,4 @@ year    = {2020}
 ~~~
 
 ## License
-Both the code and data for SD-QA are availalbe under the [Apache License 2.0](LICENSE).
+The data IS availalbe under the [Apache License 2.0](LICENSE).
