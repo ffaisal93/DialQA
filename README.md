@@ -80,7 +80,7 @@ python src/run_squad.py \
 | english-aus      | 73.67 | 59.52       | 494           |
 | english-phl      | 73.76 | 59.11       | 494           |
 | english-phl      | 73.76 | 59.11       | 494           |
-| **english(avg)** | 73.47 | 58.95       | 2470          |
+| **english(avg)** | **73.47** | 58.95       | 2470          |
 |                  |       |             |               |
 | arabic-dza       | 71.72 | 56.17       | 324           |
 | arabic-egy       | 72.39 | 56.79       | 324           |
