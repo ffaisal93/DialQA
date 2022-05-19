@@ -1,4 +1,4 @@
-# DialQa
+# DialQA
 
 Requirements (`requirements.txt`) and installation: 
 ```
@@ -18,13 +18,13 @@ data/
 					{lang}-{id}-{dialect-region}.wav
 ```
 - `dialqa-dev-og.json`: Original Development dataset gold questions.
-- `dialqa-dev-aug.json`: Development dataset with dialectal questions (speech recognition i.e. ASR outputs). This is our **task development dataset**.
-- `lang`: eng, ara, swa
+- `dialqa-dev-aug.json`: Development dataset with dialectal questions (speech-to-text outputs through automatic ASR). This is our **task development dataset**.
+- `lang`: English (eng), Arabic (ara), Kiswahili (swa)
 - `audio`: folder containing question audio files. The audio file names `{lang}-{id}-{dialect-region}` have one-to-one mappings with the example ids from the json files.
 
 ## Baseline (ASR QA)
 
-The task is to perform Extractive-QA using dialectal questions (Speech to text Outputs). We use google translation regional units (eg. en-US, sw-TZ) to perform speech to text conversion. The training file is based on huggingface's [`run_squad.py`] file.
+The task is to perform Extractive-QA using dialectal questions (Speech to text Outputs). We use the Google Speech API with regional units (eg. en-US, sw-TZ) to perform speech to text conversion. The training file is based on huggingface's [`run_squad.py`] file.
 
 
 #### Training baseline:
@@ -51,7 +51,7 @@ python src/run_squad.py \
 	--overwrite_output_dir
 ```
 
-#### Prediction on augemnted dev data
+#### Prediction on augmented dev data
 
 ```
 python src/run_squad.py \
@@ -70,29 +70,28 @@ python src/run_squad.py \
 	--overwrite_output_dir
 ``` 
 
-#### Baseline result	
+#### Baseline results	
 
 | Language-Dialect | F1    | Exact Match | Example Count |
 |------------------|-------|-------------|---------------|
-| english-nga      | 73.36 | 58.70       | 494           |
-| english-usa      | 74.35 | 59.31       | 494           |
-| english-ind_s    | 72.22 | 58.10       | 494           |
-| english-aus      | 73.67 | 59.52       | 494           |
-| english-phl      | 73.76 | 59.11       | 494           |
-| english-phl      | 73.76 | 59.11       | 494           |
-| **english(avg)** | **73.47** | **58.95**       | **2470**          |
+| English-Nigeria (nga)     | 73.36 | 58.70       | 494           |
+| English-United States (usa)     | 74.35 | 59.31       | 494           |
+| English-South India (ind_s)   | 72.22 | 58.10       | 494           |
+| English-Australia (aus)     | 73.67 | 59.52       | 494           |
+| English-Philippines (phl)      | 73.76 | 59.11       | 494           |
+| **English-Dialect (avg)** | **73.47** | **58.95**       | **2470**          |
 |                  |       |             |               |
-| arabic-dza       | 71.72 | 56.17       | 324           |
-| arabic-egy       | 72.39 | 56.79       | 324           |
-| arabic-jor       | 73.27 | 57.41       | 324           |
-| arabic-tun       | 73.55 | 57.71       | 324           |
-| **arabic(avg)**  | **72.73** | **57.02**       | **1296**          |
+| Arabic-Algeria (dza)       | 71.72 | 56.17       | 324           |
+| Arabic-Egypt (egy)       | 72.39 | 56.79       | 324           |
+| Arabic-Jordan (jor)       | 73.27 | 57.41       | 324           |
+| Arabic-Tunisia (tun)       | 73.55 | 57.71       | 324           |
+| **Arabic-Dialect(avg)**  | **72.73** | **57.02**       | **1296**          |
 |                  |       |             |               |
-| swahili-kenya    | 72.12 | 63.1        | 1000          |
-| swahili-tanzania | 70.74 | 61.7        | 1000          |
-| **swahili(avg)**  | **71.43** | **62.4**       | **2000**          |
+| Kiswahili-Kenya (ken)    | 72.12 | 63.1        | 1000          |
+| Kiswahili-Tanzania (tza) | 70.74 | 61.7        | 1000          |
+| **Kiswahili-Dialect (avg)**  | **71.43** | **62.4**       | **2000**          |
 |                  |       |             |               |
-| **All Language**            | **72.60** | **59.71**       | **5766**          |
+| **All Language (avg)**            | **72.60** | **59.71**       | **5766**          |
 
 ## Citation
 Audio files and augmented dataset are from SD-QA which was built on top of TyDiQA.
