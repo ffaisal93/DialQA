@@ -114,4 +114,4 @@ year    = {2020}
 ~~~
 
 ## License
-The data IS availalbe under the [Apache License 2.0](LICENSE).
+The data is availalbe under the [Apache License 2.0](LICENSE).
