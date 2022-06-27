@@ -73,6 +73,26 @@ python src/run_squad.py \
 	--overwrite_output_dir
 ``` 
 
+
+#### Prediction on test data
+
+```
+python src/run_squad.py \
+	--model_type bert \
+	--model_name_or_path='train_cache_output' \
+	--do_eval \
+	--do_lower_case \
+	--predict_file 'data/dialqa-test.json' \
+	--per_gpu_train_batch_size 16 \
+	--per_gpu_eval_batch_size 16 \
+	--learning_rate 3e-5 \
+	--num_train_epochs 3 \
+	--max_seq_length 384 \
+	--doc_stride 128 \
+	--output_dir 'outputs/test-mbert' \
+	--overwrite_output_dir
+``` 
+
 #### Baseline results	
 
 | Language-Dialect | F1    | Exact Match | Example Count |
